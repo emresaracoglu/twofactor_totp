@@ -29,7 +29,7 @@ cache:
   - "$HOME/.npm"
   - "$HOME/.cache/bower"
 before_install:
-- - php --info
+  - php --info
   # XDebug is only needed if we report coverage -> speeds up other builds
   - if [[ "$PHP_COVERAGE" = "FALSE" ]]; then phpenv config-rm xdebug.ini; fi
 
